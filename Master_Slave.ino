@@ -18,11 +18,13 @@
         byte SERVO_CHANNEL_AUX = 1;   // Set Channel to Output to Servo {1:AILERON , 2: ELEVATOR, 3:RUDDER or 4:THROTTLE}
     #endif
 
-    /* Setup Master Input Pins */
-    #define CHANNEL_1_PIN 4  // D2 PIN on ESP8266
-    #define CHANNEL_2_PIN 12 // D6 PIN on ESP8266
-    #define CHANNEL_3_PIN 14 // D5 PIN on ESP8266
-    #define CHANNEL_4_PIN 15 // D8 PIN on ESP8266
+    #ifdef MASTER
+      /* Setup Master Input Pins */
+      #define CHANNEL_1_PIN 4  // D2 PIN on ESP8266
+      #define CHANNEL_2_PIN 12 // D6 PIN on ESP8266
+      #define CHANNEL_3_PIN 14 // D5 PIN on ESP8266
+      #define CHANNEL_4_PIN 15 // D8 PIN on ESP8266
+    #endif
 
 /*** END CONFIGURATION ***/
 

@@ -1,7 +1,5 @@
 # PWM Wireless Forwarding over UDP
 
-*This is a very experimental project.*
-
 ## Idea
 
 We are basically sending a PWM signal over WIFI (UDP) to multiple servo motors using ESP Wifi chips.
